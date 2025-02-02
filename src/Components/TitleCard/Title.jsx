@@ -9,7 +9,7 @@ const Title = ({title,category}) => {
   const[apiData,setApiData] = useState([]);
   const cardsRef = useRef();
 
-  const .options = {
+  const options = {
     method: 'GET',
     headers: {
       accept: 'application/json',
