@@ -1,0 +1,97 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    font-size: 14px;
+    padding: 20px 6%;
+    z-index: 10;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%,
+    transparent);
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.navbar img{
+    width: 90px;
+
+}
+.navbar ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.navbar ul li{
+    cursor: pointer;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.navbar-left .icon{
+    font-size: 17px;
+    cursor: pointer;
+}
+.navbar-left .profile-img{
+    width: 40px;
+    border-radius: 5px;
+}
+.navbar-left .nav-profile{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+}
+.navbar .dropdown{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #191919;
+    width: max-content;
+    padding: 16px 22px;
+    border-radius: 5px;
+    border-radius: 3px;
+    text-decoration: underline;
+    z-index: 1;
+    display: none;
+}
+.navbar .dropdown p{
+    font-size: 12px;
+    cursor: pointer;
+}
+.nav-profile:hover .dropdown{
+    display: block;
+}
+
+.nav-dark{
+    background-color: #000000;
+}
+
+
+@media (max-width:800px){
+    .navbar{
+        padding: 20px 4%;
+    }
+    .navbar-right ul {
+        display: none;
+    }
+    .navbar img{
+        height: 25px;
+    }
+}
+@media (max-width:500px){
+    .navbar img {
+        height: 20px;
+    }
+    .navbar-left .profile-img{
+        width: 22px;
+    }
+    .navbar-right{
+        gap: 10px;
+    }  
+}
